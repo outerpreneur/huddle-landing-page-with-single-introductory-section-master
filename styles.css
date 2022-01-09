@@ -1,0 +1,65 @@
+:root {
+    --Violet: hsl(257, 40%, 49%);
+    --Soft-Magenta: hsl(300, 69%, 71%);
+    --ff1: 'Poppins', sans-serif;
+    --ff2: 'Open Sans', sans-serif;
+}
+
+/* main structure */
+
+body {
+    background: var(--Violet);
+    background-image: url(./images/bg-desktop.svg);
+    color: white;
+    min-height: 100vh;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5%;
+}
+
+.logo {
+    margin-top: 20px
+}
+
+/* container structure */
+
+.container {
+    display: flex;
+    flex-direction: row;
+    width: 90%;
+    margin: auto;
+}
+
+.container__column--one {}
+
+.container__column--two {
+    display: flex;
+    flex-direction: column;
+    margin: 3%;
+    min-width: 250px;
+}
+
+/* container content  */
+
+.container h1 {
+    font-family: var(--ff1);
+    width: 100%;
+}
+
+.container p {
+    font-family: var(--ff2);
+    width: 100%;
+}
+
+button {
+    max-width: 170px;
+    padding: 15px 15px;
+    border-radius: 25px;
+    color: var(--Violet);
+}
+
+@media (max-width: 600px) {}
